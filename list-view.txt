@@ -1,0 +1,13 @@
+ for (let i = 0; i < data.length; i++) {
+        let lis = document.createElement("li");
+        let mrk = `${data[i].username}   ${data[i].buy}   ${data[i].help}   ${data[i].chat}`;
+        lis.innerHTML = mrk;
+
+        mmm.appendChild(lis);
+      }
+
+
+
+<ul style="list-style-type: none;" id="ull">
+            <li>User   Buy   Help   Chat</li>
+        </ul>

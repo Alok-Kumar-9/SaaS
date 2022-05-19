@@ -1,0 +1,21 @@
+let results = await User.find();
+    console.log(results.length);
+    let users = [];
+    let buyList = [];
+    let helpList = [];
+    let chatList = [];
+    for (let i = 0; i < results.length; i++) {
+      users.push(results[i].username);
+      buyList.push(results[i].buy);
+      helpList.push(results[i].help);
+      chatList.push(results[i].chat);
+    }
+    console.log(users);
+
+
+, {
+      users: users,
+      buyList: buyList,
+      helpList: helpList,
+      chatList: chatList,
+    }

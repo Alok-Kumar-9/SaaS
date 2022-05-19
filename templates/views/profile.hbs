@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/pro.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div id="heading">
+        <p id="hello">
+          Hello! {{user}}
+        </p>
+      </div>
+      <div id="dash">
+         <p class="dashbrd">
+        You have clicked BUY button
+        <span id="buyy">{{buy}}</span>
+        times so far.
+      </p>
+      <p class="dashbrd">
+        You have clicked HELP button
+        <span id="helpp">{{help}}</span>
+        times so far.
+      </p>
+      <p class="dashbrd">
+        You have clicked CHAT button
+        <span id="chatt">{{chat}}</span>
+        times so far.
+      </p>
+      </div>
+    </div>
+    <div>
+      <p id="main-c">
+        <button id="buybtn" class="btn" type="submit"><span class="main-cc">Buy</span></button>
+        <button id="helpbtn" class="btn" type="submit"><span class="main-cc">Help</span></button>
+        <button id="chatbtn" class="btn" type="submit"><span class="main-cc">Chat</span></button>
+      </p>
+    </div>
+    <div id="foot">
+        <p id="logout">
+            <a href="/">Logout</a>
+        </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script>
+      let buy = "{{buy}}"; 
+      let help = "{{help}}"; 
+      let chat = "{{chat}}"; 
+      let user = "{{user}}";
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
